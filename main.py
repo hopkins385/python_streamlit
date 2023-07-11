@@ -16,7 +16,6 @@ load_dotenv(".env_file")
 
 def load_chain():
     """Logic for loading the chain you want to use should go here."""
-    # typye: ignore
     llm = LlamaCpp(
         model_path=os.environ.get(
             "LLM_MODEL_PATH", "./orca-mini-v2-ger-7b.ggmlv3.q4_0.bin"
